@@ -1,9 +1,7 @@
+exports.onCreateBabelConfig = ({actions}, options) => {
+    actions.setBabelPlugin({
+        name: 'babel-plugin-react-native-web'
+    });
 
-exports.modifyBabelrc = ({ babelrc }) => {
-  return {
-    ...babelrc,
-    plugins: babelrc.plugins.concat([
-      "babel-plugin-react-native-web",
-    ]),
-  }
-}
+
+};
